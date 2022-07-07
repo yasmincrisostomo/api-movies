@@ -1,24 +1,28 @@
-# README
+## **Desafio Backend Mobile2You**
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Desafio proposto pela Mobile2You - Dimensa para criação de API.
 
-Things you may want to cover:
+- 🎯 Objetivo: Criar uma API de serviço do catálogo de filmes com dois endpoints. O primeiro deverá fazer a leitura de uma arquivo CSV e criar os registros no banco de dados. Já o segundo deverá listar todos os filmes cadastrados em formato JSON.
 
-* Ruby version
+#### **🔧 Passo a passo da execução do código:**
+```
+git clone git@github.com:yasmincrisostom/movies-api.git
+```
+```
+cd movies-api
+```
+```
+bundle install
+```
+```
+rails db:migrate
+```
+```
+rails server
+```
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+#### **🛠 Esse projeto foi contruído com:**
+- Ruby 3.0.3
+- Rails 6.1.6
+- PostgreSQL
+- Gem 'pg_search'
