@@ -9,7 +9,7 @@ Desafio proposto pela Mobile2You - Dimensa para criação de API.
 git clone git@github.com:yasmincrisostom/api-movies.git
 ```
 ```
-cd movies-api
+cd api-movies
 ```
 ```
 bundle install
