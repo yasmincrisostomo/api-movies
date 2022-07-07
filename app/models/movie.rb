@@ -3,5 +3,5 @@ class Movie < ApplicationRecord
 
   include PgSearch::Model
 
-  pg_search_scope :search, against: %i[genre year country]
+  pg_search_scope :search, against: %i[title genre year country]
 end
