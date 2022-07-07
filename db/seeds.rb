@@ -1,14 +1,12 @@
 require 'csv'
 
-csv_path = 'db/netflix_titles.csv'
-
-CSV.foreach(csv_path, headers: true) do |row|
-  Movie.create({
-    title: row[2],
-    genre: row[1],
-    year: row[7],
-    country: row[5],
-    published_at: row[6],
-    description: row[11]
-  })
+csv_path = File.read(Rails.root.join('lib', 'csv', 'netflix_titles.csv'))
+csv = CSV.parse(csv_path, headers: true)
+csv.each do |row|
+  Movie.create({  title: row['title'],
+                  genre: row['type'],
+                  year: row['release_year'],
+                  country: row['country'],
+                  published_at: row['date_added'],
+                  description: row['description'] })
 end
