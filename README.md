@@ -6,7 +6,7 @@ Desafio proposto pela Mobile2You - Dimensa para criação de API.
 
 #### **🔧 Passo a passo da execução do código:**
 ```
-git clone git@github.com:yasmincrisostom/movies-api.git
+git clone git@github.com:yasmincrisostom/api-movies.git
 ```
 ```
 cd movies-api
