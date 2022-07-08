@@ -2,8 +2,7 @@ require 'test_helper'
 
 class MovieTest < ActiveSupport::TestCase
   test 'valid movie' do
-    movie = Movie.new(integer_id: 'nil',
-                      title: 'Top Gun: Maverick',
+    movie = Movie.new(title: 'Top Gun: Maverick',
                       genre: 'Action',
                       year: '2022',
                       country: 'USA',
