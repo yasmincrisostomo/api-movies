@@ -6,6 +6,11 @@ class MoviesControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
+  test "should get movie title" do
+    get api_v1_movies_url, params: { title: "Top Gun: Maverick" }
+    assert_response :success
+  end
+
   test "should get movie genre" do
     get api_v1_movies_url, params: { genre: "Action" }
     assert_response :success
