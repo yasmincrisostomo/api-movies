@@ -10,13 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_07_07_190303) do
+ActiveRecord::Schema.define(version: 2022_07_08_172231) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "movies", id: :uuid, default: -> { "gen_random_uuid()" }, force: :cascade do |t|
-    t.bigint "integer_id"
+  create_table "movies", id: :serial, force: :cascade do |t|
     t.string "title"
     t.string "genre"
     t.string "year"
