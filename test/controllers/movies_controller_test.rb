@@ -12,7 +12,7 @@ class MoviesControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should get movie genre" do
-    get api_v1_movies_url, params: { genre: "Action" }
+    get api_v1_movies_url, params: { genre: "Movie" }
     assert_response :success
   end
 
