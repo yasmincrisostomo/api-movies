@@ -1,5 +1,6 @@
 class Movie < ApplicationRecord
   validates :id, uniqueness: true
+  validates :title, presence: true, uniqueness: true
 
   include PgSearch::Model
 
