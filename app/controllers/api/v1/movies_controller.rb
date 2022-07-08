@@ -7,6 +7,5 @@ class Api::V1::MoviesController < Api::V1::BaseController
     else
       @movies = Movie.all.order(:year).limit(limit).offset(offset)
     end
-    # @movies = params[:query].present? ? Movie.search(params[:query]).limit(limit).offset(offset) : Movie.all.order(:year).limit(limit).offset(offset)
   end
 end
